@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Login Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome1/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="jsc/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Your Trusted Bank Partner</h1>
+</div>
+
+<!-- Simple Login - START -->
+<!-- you need to include the shieldui css and js assets in order for the charts to work -->
+<link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+<script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<div class="container" id="container1">
+    <div class="col-md-6 col-md-offset-3" id="colorDiv">
+        <div class="col-md-6 col-md-offset-3" id="innerDiv">
+            <div class="page-header">
+                <h3>Log in</h3>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="userInput"> ATM Card Number</label>
+                    <input type="tel" class="form-control" placeholder="Enter AT< Card Number">
+                </div>
+                <div class="form-group">
+                    <label for="passwordConfirm">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Pin Code">
+                   
+                </div>
+        
+            </form>
+            <button type="submit" id="submitBtn"> <a href = "Transaction.html"> Log in</a></button>
+            <br />
+            <div class="footer">
+                <p>Design provided by Dorado</a></p>
+            </div>            
+        </div>
+    </div>    
+</div>
+
+
+
+
+
+
+<style>
+    #container1 {
+        background-color: #191919;
+    }
+
+    #colorDiv {
+        background-color: #666666;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+
+    form {
+        display: block;
+    }
+
+    .form-group label {
+        text-align: center;
+    }
+
+    #submitBtn {
+        margin: auto;
+        display: block;
+        border-radius: 20px;
+        width: 100px;
+    }
+
+    .large {
+        width: 100%;
+    }
+
+    #frgPass {
+        color: #d9d9d9;
+    }
+
+    .page-header {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer a {
+        color: #d9d9d9;
+    }
+</style>
+
+<script type="text/javascript">
+    $(function () {
+        $('#submitBtn').shieldButton();
+
+        $('#dropdown').shieldDropDown({
+            cls: "large"
+        });
+    });
+</script>
+<!-- Simple Login - END -->
+
+</div>
+
+</body>
+</html>

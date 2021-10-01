@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Credit Card Payment Form Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app = "angular">
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Your Trusted Saving Partner</h1>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row" ng-controller = "Depo" ng-model="init">
+
+                        <h3 class="text-center">Payment Details</h3>
+                        <h4 class = "text-center"> Your current balance is {{ init }}</h4>
+                        <img class="img-responsive cc-img" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group" ng-controller = "Depo" ng-init= "num1=50000">
+                                    <label>Enter Amount</label>
+                                   
+                                        <input type="text" class="form-control" ng-model = "num2">
+                                        
+                                         
+                                   
+                                    <div class="col-xs-12">
+                                        <br>
+                            <input type = "button" class="btn btn-warning btn-lg btn-block" ng-model= "add" ng-click = "add (50000,num2)"value = "Deposit Entered Amount">
+
+                                                        {{txtsum}} {{sum}}
+
+
+                            <input type = "button" class="btn btn-warning btn-lg btn-block" ng-model= "subtract" ng-click = "subtract (50000,num2)"value = "Withdraw Entered Amount">
+
+                                                        {{txtminus}} {{diff}}
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+               
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cc-img {
+        margin: 0 auto;
+    }
+</style>
+<script src = "js/app.js"></script>
+<script src = "js/mainctrl.js"></script>
+</div>
+
+</body>
+</html>
